@@ -15,10 +15,10 @@ function computerPlay() {
   //choose from either rock paper or scissors
   const options = ["rock", "paper", "scissors"];
   computerChoice = options[Math.floor(Math.random() * options.length)];
-  //return the computers choice
   return computerChoice;
 }
 
+//have the player select
 function playerSelection() {
   playerChoice = prompt("Choose Rock, Paper, or Scissors. 5 rounds.");
   playerChoice = playerChoice.toLowerCase();
@@ -85,6 +85,7 @@ function game() {
     computerPlay();
     playRound(computerChoice, playerChoice);
     gameResults.push(result);
+    //adjust the scores after each round
     if (playerWins) {
       playerScore++;
     } else if (computerWins) {
@@ -96,6 +97,7 @@ function game() {
   console.log(computerScore);
 }
 
+//declare a winner using the scores
 function whoWon(playerScore, computerScore) {
   if (playerScore > computerScore) {
     console.log(
