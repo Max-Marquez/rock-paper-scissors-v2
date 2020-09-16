@@ -18,7 +18,7 @@ function computerPlay() {
   return computerChoice;
 }
 
-//have the player select
+// Have the player select an option
 function playerSelection() {
   playerChoice = prompt("Choose Rock, Paper, or Scissors. 5 rounds.");
   playerChoice = playerChoice.toLowerCase();
@@ -97,7 +97,7 @@ function game() {
   console.log(computerScore);
 }
 
-//declare a winner using the scores
+// Declare a winner using the scores
 function whoWon(playerScore, computerScore) {
   if (playerScore > computerScore) {
     console.log(
