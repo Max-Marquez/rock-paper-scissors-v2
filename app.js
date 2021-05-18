@@ -16,8 +16,8 @@ const win = document.getElementById('winner')
 
 // Update the scores in the DOM, each time the btn is clicked
 function keepScore(playerScore, computerScore) {
-      pPlayer.innerHTML = `Player ${playerScore} `;
-      pComp.innerHTML = `${computerScore} Comp`;
+      pPlayer.innerHTML = `${playerScore} `;
+      pComp.innerHTML = `${computerScore} `;
       return;
     }
 

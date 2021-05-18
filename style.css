@@ -4,51 +4,93 @@
  #f26419
  #f6ae2d
  #13A76D
-*/ 
+*/
 
-* {
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html {
-    font-family: 'Open Sans', sans-serif;
-    background: #33658a;
-    color: #fff;
+/* general */
+
+body {
+  background: #33658a;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
 }
 
-body {
-    margin-top: 50px;
-    text-align: center;
+strong {
+  font-weight: bold;
 }
 
-button {
-    margin: 12px;
-    border: 1px;
-    border-color: black;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #86bbd8;
-    color: #fff;
-    text-shadow: #33658a;
-    font-size: 24px;
+h3 {
+  color: #eee;
 }
+
+.intro {
+  padding-top: 4em;
+}
+
+.buttons .btn:hover {
+  transform: scale(1.1);
+}
+
+/* score and results */
+
+.score-title {
+  padding: 0.4em;
+}
+
+.player-title {
+  color: #fff;
+}
+
+.score {
+  font-size: 2em;
+}
+
 .results {
-    font-size: 1.5em;
-    color: #f6ae2d;
+  font-size: 2.5em;
+  color: #f6ae2d;
 }
+
 .results p {
-    display: inline; 
+  display: inline;
+  padding-top: 3em;
 }
+
 .gameWin {
-    color: #13A76D;
+  color: #13a76d;
+  font-size: 5em;
 }
 
 .gameLose {
-    color: #F26419;
+  color: #f26419;
+  font-size: 5em;
+}
+
+/* buttons */
+
+.btn {
+  margin: 1em;
+  border: 1px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #86bbd8;
+  color: #fff;
+  text-shadow: #33658a;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
 }

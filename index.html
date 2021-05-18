@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>Rock, Paper, Scissors</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="intro">
       <h1>Rock, Paper, Scissors</h1>
-      <h3>First to 5 wins!</h3>
+      <h3>First to <strong>5</strong> wins!</h3>
     </header>
     <main>
       <div class="results">
-        <h2>Score</h2>
-        <p id="playerScore">Player 0</p>
-        <p>:</p>
-        <p id="computerScore">0 Comp</p>
+        <h2 class="score-title">Score</h2>
+        <p class="player-title">Player</p>
+        <p id="playerScore">0</p>
+        <p class="player-title"> : </p>
+        <p id="computerScore">0</p>
+        <p class="player-title">Comp</p>
+      </div>
+      <div class="buttons">
+        <button class="btn" id="rock">Rock</button>
+        <button class="btn" id="paper">Paper</button>
+        <button class="btn" id="scissors">Scissors</button>
       </div>
       <div class="win">
         <h2 id="winner"></h2>
       </div>
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
     </main>
     <script src="app.js"></script>
   </body>
